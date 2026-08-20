@@ -17,7 +17,6 @@ from homeassistant.components.hassio import (
     AddonInfo,
     AddonManager,
     AddonState,
-    is_hassio,
 )
 from homeassistant.const import CONF_URL
 from homeassistant.core import HomeAssistant, callback
@@ -28,6 +27,7 @@ from homeassistant.data_entry_flow import (
     FlowResult,
 )
 from homeassistant.helpers.aiohttp_client import async_get_clientsession
+from homeassistant.helpers.hassio import is_hassio
 
 from . import disconnect_client
 from .addon import get_addon_manager

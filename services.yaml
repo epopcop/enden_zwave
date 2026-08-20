@@ -6,7 +6,7 @@ clear_lock_usercode:
   target:
     entity:
       domain: lock
-      integration: zwave_js
+      integration: enden_zwave
   fields:
     code_slot:
       name: Code slot
@@ -22,7 +22,7 @@ set_lock_usercode:
   target:
     entity:
       domain: lock
-      integration: zwave_js
+      integration: enden_zwave
   fields:
     code_slot:
       name: Code slot
@@ -44,7 +44,7 @@ set_config_parameter:
   description: Allow for changing configuration parameters of your Z-Wave devices.
   target:
     entity:
-      integration: zwave_js
+      integration: enden_zwave
   fields:
     parameter:
       name: Parameter
@@ -72,7 +72,7 @@ bulk_set_partial_config_parameters:
   description: Allow for bulk setting partial parameters. Useful when multiple partial parameters have to be set at the same time.
   target:
     entity:
-      integration: zwave_js
+      integration: enden_zwave
   fields:
     parameter:
       name: Parameter
@@ -104,7 +104,7 @@ refresh_value:
       example: sensor.family_room_motion
       selector:
         entity:
-          integration: zwave_js
+          integration: enden_zwave
     refresh_all_values:
       name: Refresh all values?
       description: Whether to refresh all values (true) or just the primary value (false)
@@ -117,7 +117,7 @@ set_value:
   description: Allow for changing any value that Z-Wave JS recognizes on a Z-Wave device. This service has minimal validation so only use this service if you know what you are doing.
   target:
     entity:
-      integration: zwave_js
+      integration: enden_zwave
   fields:
     command_class:
       name: Command Class
@@ -166,7 +166,7 @@ multicast_set_value:
   description: Allow for changing any value that Z-Wave JS recognizes on multiple Z-Wave devices using multicast, so all devices receive the message simultaneously. This service has minimal validation so only use this service if you know what you are doing.
   target:
     entity:
-      integration: zwave_js
+      integration: enden_zwave
   fields:
     broadcast:
       name: Broadcast?
@@ -216,4 +216,4 @@ ping:
   description: Forces Z-Wave JS to try to reach a node. This can be used to update the status of the node in Z-Wave JS when you think it doesn't accurately reflect reality, e.g. reviving a failed/dead node or marking the node as asleep.
   target:
     entity:
-      integration: zwave_js
+      integration: enden_zwave
