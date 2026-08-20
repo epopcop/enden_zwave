@@ -3,6 +3,7 @@
   "name": "Enden Z-Wave JS",
   "config_flow": true,
   "documentation": "https://www.home-assistant.io/integrations/zwave_js",
+  "issue_tracker": "https://github.com/epopcop/enden_zwave",
   "requirements": ["zwave-js-server-python==0.27.1"],
   "codeowners": ["@home-assistant/z-wave"],
   "dependencies": ["http", "websocket_api"],
