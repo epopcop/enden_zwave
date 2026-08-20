@@ -1,0 +1,5 @@
+{
+    "name": "enden_zwave",
+    "content_in_root": false,
+    "homeassistant": "2023.10.0"
+}
